@@ -238,16 +238,16 @@ header .header-2 h5 {
 }
 
 .fullElem {
-  height: 100vh; /* ✅ Fix this */
-    width: 100vw; /* Optional but useful */
+  height: 100vh; 
+    width: 100vw; 
     background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
     padding: 40px;
     font-size: 55px;
     display: none;
-    position: fixed; /* ✅ Change from absolute to fixed */
+    position: fixed; 
     top: 0;
     left: 0;
-    z-index: 1000; /* ✅ Ensure it stays on top */
+    z-index: 1000; 
     overflow-y: hidden;
 }
 
