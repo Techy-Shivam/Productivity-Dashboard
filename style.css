@@ -1,4 +1,4 @@
-:root {
+t:root {
     --pri: #1d353d;
     --sec: #e3402b;
     --tri-1: #905040;
@@ -238,18 +238,17 @@ header .header-2 h5 {
 }
 
 .fullElem {
-    height: 110%;
-    width: 100%;
-    background: -webkit-gradient(linear, left top, right top, from(#0f2027), color-stop(#203a43), to(#2c5364));
-    background: -o-linear-gradient(left, #0f2027, #203a43, #2c5364);
+  height: 100vh; /* ✅ Fix this */
+    width: 100vw; /* Optional but useful */
     background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
     padding: 40px;
     font-size: 55px;
     display: none;
-    /* Hidden by default */
-    position: absolute;
+    position: fixed; /* ✅ Change from absolute to fixed */
     top: 0;
     left: 0;
+    z-index: 1000; /* ✅ Ensure it stays on top */
+    overflow-y: hidden;
 }
 
 .back {
@@ -983,4 +982,68 @@ header .header-2 h5 {
 
 .mark-imp label {
     font-size: 20px;
+}
+
+@media (max-width: 600px) {
+ 
+nav {
+    height: 60px;
+    margin-bottom: 20px;
+    padding: 30px;
+}
+
+nav .nav-in {
+    font-size: 22px;
+}
+
+.allElems header{
+    height: 200px;
+    padding: 18px;
+}
+
+header .header-1 h3 {
+    font-size: 30px;
+}
+
+header .header-1 h1 {
+    font-size: 25px;
+}
+
+header .header-1 h4 {
+    font-size: 30px;
+}
+
+header .header-2 h1 {
+    font-size: 25px;
+    font-weight: 700;
+    text-align: end;
+    margin: 5px;
+}
+
+header .header-2 h2 {
+    text-align: end;
+    font-size: 25px;
+}
+
+header .header-2 h3 {
+    font-size: 20px;
+}
+
+header .header-2 h4 {
+    font-size: 20px;
+}
+
+header .header-2 h5 {
+    font-size: 20px;
+}
+
+.allElems .allFeatures {
+    justify-content: center;
+    gap: 24px;
+}
+
+.elem {
+    width: 220px;
+    border-radius: 20px;
+}
 }

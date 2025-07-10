@@ -10,7 +10,6 @@ function openFeatures() {
         })
         backBtn.forEach(function (btn) {
             btn.addEventListener('click', function () {
-                allfullElems[btn.id].style.display = 'none'
             })
         })
     })
