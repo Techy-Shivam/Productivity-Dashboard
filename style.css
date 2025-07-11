@@ -318,21 +318,21 @@ header .header-2 h5 {
     width: 100%;
     font-size: 25px;
     background-color: #fbefdd;
-    color: var(--tri-1);
     font-weight: 550;
     border-radius: 5px;
     border: none;
     outline: none;
     margin-bottom: 20px;
+    color: black;
 }
 
 
 .todo-container .addTask form textarea {
+    color: black;
     padding: 15px 25px;
     width: 100%;
     font-size: 25px;
     background-color: #fbefdd;
-    color: var(--tri-1);
     font-weight: 550;
     border-radius: 5px;
     border: none;
@@ -812,7 +812,7 @@ header .header-2 h5 {
     width: 100%;
     font-size: 25px;
     background-color: #fbefdd;
-    color: var(--tri-1);
+    color: black;
     font-weight: 550;
     border-radius: 5px;
     border: none;
@@ -826,7 +826,7 @@ header .header-2 h5 {
     width: 100%;
     font-size: 25px;
     background-color: #fbefdd;
-    color: var(--tri-1);
+    color: black;
     font-weight: 550;
     border-radius: 5px;
     border: none;
